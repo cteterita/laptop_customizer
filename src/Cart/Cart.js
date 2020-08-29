@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { USCurrencyFormat } from '../App'; //TODO: Should this be passed as a prop?
 import Summary from '../Summary/Summary';
 import Total from '../Total/Total';
 
