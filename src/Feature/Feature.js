@@ -4,21 +4,19 @@ import Options from '../Options/Options';
 
 class Feature extends Component {
     render() {
-        const { feature, idx } = this.props;
-        const featureHash = feature + '-' + idx;
+        const { featureName, idx } = this.props;
+        const featureHash = featureName + '-' + idx;
     
         return (
             <fieldset className="feature" key={featureHash}>
                 <legend className="feature__name">
-                    <h3>{feature}</h3>
+                    <h3>{featureName}</h3>
                 </legend>
                 <Options
                     selected={this.props.selected}
-                    features={this.props.features}
+                    feature={this.props.feature}
                     updateFeature={this.props.updateFeature}
-                    feature={feature}
-                    idx={idx}
-                    key={idx}
+                    featureName={featureName}
                 />
             </fieldset>
         );

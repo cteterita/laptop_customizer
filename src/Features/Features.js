@@ -4,13 +4,13 @@ import Feature from '../Feature/Feature';
 
 class Features extends Component {
     render() {
-        const features = Object.keys(this.props.features).map((feature, idx) => {
+        const features = Object.keys(this.props.features).map((featureName, idx) => {
             return (
                 <Feature 
-                    selected={this.props.selected}
-                    features={this.props.features}
+                    selected={this.props.selected[featureName]}
+                    feature={this.props.features[featureName]}
                     updateFeature={this.props.updateFeature}
-                    feature={feature}
+                    featureName={featureName}
                     idx={idx}
                     key={idx}
                 />
