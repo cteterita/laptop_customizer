@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-
-
 import './App.css';
 import Cart from './Cart/Cart';
 import Features from './Features/Features';

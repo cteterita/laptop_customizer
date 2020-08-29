@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import slugify from 'slugify';
 import { USCurrencyFormat } from '../App';
 
+import './Options.css';
+
 class Options extends Component {
     render() {
         const { feature, featureName, selected } = this.props;

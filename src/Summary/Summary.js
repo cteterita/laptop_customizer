@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { USCurrencyFormat } from '../App';
 
+import './Summary.css';
+
 class Summary extends Component {
     render() {
         return Object.keys(this.props.selected).map((feature, idx) => {

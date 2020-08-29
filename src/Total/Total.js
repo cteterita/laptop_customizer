@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { USCurrencyFormat } from '../App';
 
+import './Total.css';
+
 class Total extends Component {
     render(){
         const total = Object.keys(this.props.selected).reduce(
