@@ -4,13 +4,6 @@ import './App.css';
 import Cart from './Cart/Cart';
 import Features from './Features/Features';
 
-// This object will allow us to
-// easily convert numbers into US dollar values
-const USCurrencyFormat = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD'
-});
-
 class App extends Component {
   state = {
     selected: {
@@ -63,4 +56,3 @@ class App extends Component {
 }
 
 export default App;
-export { USCurrencyFormat };

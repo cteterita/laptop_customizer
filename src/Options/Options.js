@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import slugify from 'slugify';
-import { USCurrencyFormat } from '../App';
+import { USCurrencyFormat } from '../Utils';
 
 import './Options.css';
 
